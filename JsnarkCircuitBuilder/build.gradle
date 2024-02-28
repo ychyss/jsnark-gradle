@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+project.version = gradle.ext.projectVersion
+project.file('src/main/resources/VERSION').setText(gradle.ext.projectVersion, 'UTF-8')
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on
+    implementation 'org.bouncycastle:bcprov-jdk15on:1.70'
+    testImplementation 'junit:junit:4.13.1'
+
+}

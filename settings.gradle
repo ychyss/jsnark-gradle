@@ -1,0 +1,6 @@
+gradle.ext.projectVersion = "0.1.0"
+gradle.ext.projectDescriptionName = "jsnark-gradle"
+
+rootProject.name = 'jsnark-gradle'
+include 'JsnarkCircuitBuilder'
+

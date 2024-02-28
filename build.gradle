@@ -1,0 +1,9 @@
+plugins {
+    id 'java'
+}
+
+project.version = gradle.ext.projectVersion
+
+repositories {
+    mavenCentral()
+}
