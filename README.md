@@ -1,3 +1,7 @@
+# jsnark-gradle
+
+从 https://github.com/akosba/jsnark 改造成gradle项目,习惯操作  
+
 ## jsnark
 
 This is a Java library for building circuits for preprocessing zk-SNARKs. The library uses libsnark as a backend (https://github.com/scipr-lab/libsnark), and can integrate circuits produced by the Pinocchio compiler (https://vc.codeplex.com/SourceControl/latest) when needed by the programmer. The code consists of two main parts:
@@ -83,10 +87,10 @@ Some of the examples and tests will require bcprov-jdk15on-159.jar as well to be
 Note: An IDE, e.g. Eclipse, or possibly the ant tool can be used instead to build and run the Java project more conveniently.
 
 ### Running and Testing JsnarkCircuitBuilder (gradle)
-运行产生lib
-`
-gradle build
-`
+运行产生lib  
+```bash
+gradlew build
+```
 例子可以直接使用IDE运行 SimpleCircuitGenerator,注意配置对config.properties中的路径
 
 
